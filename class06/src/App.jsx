@@ -2,14 +2,24 @@ import React from 'react'
 import { useState } from 'react';
 
 const App = () => {
+  
+  const [title, setTitle] = useState('');
+
+  const [allUsers, setallUsers] = useState([]);
+
 
   const submitHandler = (e) =>{
     e.preventDefault();
-    console.log('Form Submitted');
-    setName('');
+    const newAllUsers = [...allUsers]
+
+    newAllUsers.push(title);
+    console.log(newAllUsers);
+
+    setallUsers(newAllUsers);
+    setTitle('');
   }
 
-  const [name, setName] = useState('');
+
 
   return (
     <div>
@@ -18,10 +28,10 @@ const App = () => {
       }} >
         <input type='text'
          placeholder='Enter name'
-         value={name}
+         value={title}
+         required
          onChange={(e)=>{
-          console.log(e.target.value);
-          setName(e.target.value);
+          setTitle(e.target.value);
          }}
           ></input>
         <button>Submit</button>
