@@ -36,6 +36,10 @@ const App = () => {
           ></input>
         <button>Submit</button>
       </form>
+
+      {allUsers.map((elem, idx)=>{
+        return <h1 key={idx}>{elem}</h1>
+      })}
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const card = () => {
+const card = (name , age) => {
   return (
     <div className='text-xl text-red-700 ' >
-      Card
+      {name}, {age}
     </div>
   )
 }
