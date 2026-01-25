@@ -1,0 +1,18 @@
+import React from 'react'
+
+const Card = (props) => {
+ // The two way binding and form working , with task
+  return (
+    <div className='lg:w-[23vw] md:w-[40vw] sm:w-[65vw] w-[63vw] bg-white text-black rounded-xl p-5 px-8  flex items-center flex-col text-center' >
+      <img className='h-20 w-20 rounded-full' src= {props.elem.imageURL}></img>
+      <h1 className='text-2xl mt-2 font-bold'>{props.elem.userName}</h1>
+      <h5 className='text- text-blue-500 text-lg font-semibold my-2'>{props. elem.userName}</h5>
+      <h5 className='text-sm font-medium leading-tight'>{props.elem.userDesc}</h5>
+      <button onClick={(elem)=>{
+        props.deleteHandler(props.idx);
+      }} className='px-4 py-2 bg-red-600 text-white text-xs cursor-pointer font-semibold mt-3 active:scale-95' >Remove</button>
+    </div>
+  )
+}
+
+export default Card
