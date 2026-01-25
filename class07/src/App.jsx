@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import Card from './components/card';
 
+// Application for managing user cards with dynamic form submission
 const App = () => {
 
   const [userName, setuserName] = useState(''); // created hook for storing individual inputs
