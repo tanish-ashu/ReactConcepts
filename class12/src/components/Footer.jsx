@@ -7,11 +7,11 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-        <h3> Footer</h3>
-        <button
-          onClick={()=>{
-            navigate('/courses');
-          }} > Explore Courses</button>
+      <h3> Footer</h3>
+      <button
+        onClick={() => {
+          navigate('/courses');
+        }} > Explore Courses</button>
     </div>
   )
 }
