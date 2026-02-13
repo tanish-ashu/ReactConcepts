@@ -4,7 +4,25 @@ import { Outlet } from 'react-router-dom'
 const Courses = () => {
   return (
     <div>
-      <h2> Courses Page</h2>
+      <div className='sale'>
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+        <p>Sale is LIVE!!! </p> 
+      </div>
 
       <Outlet/>
     </div>

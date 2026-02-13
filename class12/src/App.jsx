@@ -6,6 +6,8 @@ import About from './pages/About'
 import Courses from './pages/Courses'
 import Kodr from './pages/Kodr'
 import Kodex from './pages/Kodex'
+import AllCourses from './pages/AllCourses'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,10 +17,13 @@ const App = () => {
           <Route path='/' element={ <Home/>}></Route>
           <Route path='/about' element={ <About/>}></Route>
           <Route path='/courses' element={ <Courses/>}>
+              <Route path='/courses' element={ <AllCourses/>} />
               <Route path='/courses/Kodr' element={ <Kodr/>} />
               <Route path='/courses/Kodex' element={ <Kodex/>} />
           </Route>
       </Routes>
+
+      <Footer/>
     </div>
   )
 }
